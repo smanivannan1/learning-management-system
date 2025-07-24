@@ -1,18 +1,18 @@
 # Student Course Management System
 
-A full-stack web application built using **Java Spring Boot Microservices**, **PostgreSQL**, and an **Angular frontend**, simulating a modern learning platform. Students can register/login, enroll/search courses, submit assignments, and view grades. Instructors manage course content and track student progress. The system features secure role-based access, modular microservice architecture, and scalable deployment on the cloud.
+I designed and developed a full-stack web-based application that simulates key workflows of modern online learning systems, supporting personalized dashboards for student and instructor access. Students can register, browse and enroll in available courses, submit course-specific assignments, and view grades for individual submissions and cumulative course performance. Instructors have a dedicated interface to view and manage student enrollment, create and update courses/content, post assignments, grade submissions, and manage students across multiple classes. The system automatically calculates and updates each student’s course grade by aggregating assignment scores, allowing students to view their performance across all enrolled courses in a centralized dashboard. I implemented secure role-based access in a modular microservices architecture, and designed a multi-page Angular frontend for personalized, role-specific content. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and hosted the application on the cloud so users can use it reliably without needing to install anything.
 
-👉 **Live Demo**: [http://34.173.28.213:4200/login](http://34.173.28.213:4200/login)
+You can test out the platform here:
+**Live Demo**: [http://34.173.28.213:4200/login](http://34.173.28.213:4200/login)
 ---
 ## Features
 
-- **User Authentication**: JWT-based login system with secure registration and role assignment for students and instructors
+- **User Authentication**: JWT-based login system with secure registration and role-based access for students and instructors
 - **Course Management**: Instructors can create, update, delete, and manage courses
 - **Course Enrollment**: Students can browse courses and enroll or unenroll
-- **Role-Based Access Control**: Separate access flows and permissions for students and instructors
-- **Service Communication**: Microservices communicate via REST (using Feign clients)
+- **Role-Based Access Control**: Separate access flows, dashboard, and permissions for students and instructors
+- **Assignment Submission & Grading**: Students can submit assignments, and instructors can view, grade, and provide feedback
 - **API Gateway & Service Discovery**: Routes traffic using Spring Cloud Gateway with dynamic service registration via Eureka
-- **Containerization**: All services are containerized with Docker for isolated, scalable deployment
 
 ---
 
@@ -39,12 +39,15 @@ A full-stack web application built using **Java Spring Boot Microservices**, **P
 
 ## Microservices Overview
 
-- **User Service** – Handles registration, login, and role assignment  
+- **Inter-Service Communication**: Independent microservices communicate via REST (using Feign clients)
+- **User Service** – Handles user registration, login, role assignment, and JWT for secure authentication
 - **Course Service** – Manages course data (CRUD operations, search)  
-- **Enrollment Service** – Handles student course enrollments and history  
-- **Progress Service** – Tracks lesson/module completion and generates reports  
-- *(Optional)* **Recommendation Service** – Suggests courses based on interests
-
+- **Enrollment Service** – Handles student course enrollments and status (ACTIVE vs INACTIVE)
+- **Assignment Service** – Enables instructors to create assignments and students to view assigned work and due dates
+- **Submission Service** – Handles student assignment submissions and feedback from the instructor side
+- **Gradebook Service** – Calculates overall grades for students based on assignment scores and exposes grade data per course and student
+- **API Gateway & Service Discovery**: Routes traffic using Spring Cloud Gateway with dynamic service registration via Eureka
+- **Containerization**: All services are containerized with Docker for isolated, scalable deployment, 
 ---
 
 ## Future Improvements

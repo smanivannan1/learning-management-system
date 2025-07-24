@@ -5,7 +5,7 @@
 **Sachin Manivannan**   
 
 ---
-I developed a full-stack web-based application that simulates the core workflows of modern online learning systems. The system offers an intuitive, role-specific interface that streamlines common academic interactions between students and instructors in an educational setting. Students can easily manage course enrollment, assignments, and academic progress through a personalized dashboard with dedicated pages for each enrolled course. Instructors are equipped with tools to post content, monitor student engagement, and deliver personalized feedback. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
+I developed a full-stack web-based application that simulates the core workflows of modern online learning systems. The system offers an intuitive, role-specific interface that streamlines common academic interactions between students and instructors in a digital environment. For demo purposes, I designed and populated the platform with real courses and layouts inspired by my university, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
 
 You can test out the platform here:
 
@@ -13,10 +13,10 @@ You can test out the platform here:
 ---
 ## Features
 
-- Secure login system provides tailored access and functionality based on whether the user is a student or instructor
-- Students can browse available courses, enroll in classes, and track their academic progress in one personalized home page
+- Secure login system provides personalized access and functionality based on whether the user is a student or instructor
+- Students can browse available courses, manage their enrollments, and track their academic progress in one personalized home page
 - Each course a student is enrolled in has its own dedicated page displaying course content, assignments, due dates, submissions, and grades (specific to the user)
-- Instructors can create and manage courses, edit enrollment, post assignments, view/grade student submissions
+- Instructors can create and manage courses, edit enrollment, post assignments, and view/grade student submissions
 - Assignments can be submitted by students online prior to the due date, and returned with individual feedback from the instructor
 - Grades are automatically calculated and updated, helping students stay informed across all courses
 

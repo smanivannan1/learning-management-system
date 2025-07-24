@@ -1,11 +1,11 @@
-# Student Course Management System
+# Learning Management System
 
 ## Author
 
 **Sachin Manivannan**   
 
 ---
-I developed a full-stack web-based application that simulates the core workflows of modern online learning systems. The system offers an intuitive, role-specific interface that streamlines common academic interactions between students and instructors in a digital environment. For demo purposes, I designed and populated the platform with real courses and layouts inspired by my university, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
+I developed a full-stack learning management system application that implements the core workflows of modern online learning platforms. The system offers an intuitive, role-specific interface that streamlines common academic interactions between students and instructors in a digital environment. For demo purposes, I designed and populated the platform with real courses and layouts inspired by my university, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
 
 You can test out the platform here:
 

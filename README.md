@@ -1,6 +1,6 @@
 # Student Course Management System
 
-I designed and developed a full-stack web-based application that simulates key workflows of modern online learning systems, supporting personalized dashboards for student and instructor access. Students can register, browse and enroll in available courses, submit course-specific assignments, and view grades for individual submissions and cumulative course performance. Instructors have a dedicated interface to view and manage student enrollment, create and update courses/content, post assignments, grade submissions, and manage students across multiple classes. The system automatically calculates and updates each student’s course grade by aggregating assignment scores, allowing students to view their performance across all enrolled courses in a centralized dashboard. I implemented secure role-based access in a modular microservices architecture, and designed a multi-page Angular frontend for personalized, role-specific content. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and hosted the application on the cloud so users can use it reliably without needing to install anything.
+I designed and developed a full-stack web-based application that simulates key workflows of modern online learning systems, supporting both student and instructor access. Students can register, browse and enroll in available courses, submit course-specific assignments, and view grades for individual submissions and cumulative course performance. Instructors have a dedicated interface to view and manage student enrollment, create and update courses/content, post assignments, grade submissions, and manage students across multiple classes. The system automatically calculates and updates each student’s course grade by aggregating assignment scores, allowing students to view their performance across all enrolled courses in a centralized dashboard. I implemented secure role-based access in a microservices architecture, and designed a multi-page frontend webpage for personalized, user-specific content. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
 
 You can test out the platform here:
 **Live Demo**: [http://34.173.28.213:4200/login](http://34.173.28.213:4200/login)
@@ -48,7 +48,7 @@ You can test out the platform here:
 - **Gradebook Service** – Calculates overall grades for students based on assignment scores and exposes grade data per course and student
 - **API Gateway & Service Discovery**: Routes traffic using Spring Cloud Gateway with dynamic service registration via Eureka
 - **Containerization**: All services are containerized with Docker for isolated, scalable deployment, 
----
+
 
 ## Future Improvements
 

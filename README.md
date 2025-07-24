@@ -2,7 +2,7 @@
 
 ## Author
 
-**Sachin Manivannan**  
+**Sachin Manivannan**   
 
 ---
 I developed a full-stack web-based application that simulates the core workflows of modern online learning systems. The system offers an intuitive, role-specific interface that streamlines common academic interactions between students and instructors in an educational setting. Students can easily manage course enrollment, assignments, and academic progress through a personalized dashboard with dedicated pages for each enrolled course. Instructors are equipped with tools to post content, monitor student engagement, and deliver personalized feedback. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and I hosted the application on the cloud so users can use it reliably without needing to install anything.

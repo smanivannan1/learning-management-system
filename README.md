@@ -25,21 +25,28 @@ You can check out the platform here:
 ## Tech Stack
 
 ### Backend:
-- **Java 17**, **Spring Boot**
-- **Spring Security**, **JWT**
-- **Spring Cloud Gateway**, **Eureka Discovery**
-- **Spring Data JPA**, **Feign Clients**
-- **RabbitMQ** (used for asynchronous messaging)
-- **PostgreSQL**
+- **Java 17**, **Spring Boot** - Core application framework
+- **Gradle** – Build automation and dependency management
+- **PostgreSQL** - Relational database used by each service
+- **Spring Security**, **JWT** - Authentication and role-based authorization
+- **Spring Cloud Gateway**, **Eureka Discovery** – API routing and service registry
+- **Spring Data JPA** – Data persistence and database interaction
+- **Feign Clients** - Inter-service communication via REST
+- **RESTful API** – Backend communication pattern for client interaction
+- **RabbitMQ** - Asynchronous messaging between services
 
 ### Frontend:
-- **Angular**  
-- **RESTful API** integration for dynamic data rendering
+- **Angular** - framework for building the UI
+- **TypeScript** – Strongly typed JavaScript used in Angular
+- **HTML**, **CSS** – Markup and styling for components
+ 
 
 ### DevOps:
-- **Docker** for containerization  
-- **Postman** for API testing  
-- Deployed to **Google Cloud Platform** via Compute Engine
+- **Git** -	Version control and project collaboration
+- **Docker** - Containerization of microservices
+- **Docker Compose** – Orchestration tool to manage multi-container application setup
+- **Postman** - API testing tool used for validating backend endpoints
+- **Google Cloud Platform** - deployed via Compute Engine VM instance
 
 ---
 
@@ -61,7 +68,7 @@ You can check out the platform here:
 
 - OAuth2 support and enhanced security
 - Redis caching and performance optimization
-- CI/CD with GitHub Actions or Jenkins
+- CI/CD with Jenkins
 - Kubernetes deployment for orchestration
 - UI/UX improvements and full mobile responsiveness
 

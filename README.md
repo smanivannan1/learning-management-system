@@ -5,7 +5,7 @@
 **Sachin Manivannan**  
 
 ---
-I developed a full-stack web-based application that simulates key workflows of modern online learning systems, supporting both student and instructor access. Students can register, browse and enroll in available courses, submit course-specific assignments, and view grades for individual submissions and cumulative course performance. Instructors have a dedicated interface to view and manage student enrollment, create and update courses/content, post assignments, grade submissions, and manage students across multiple classes. The system automatically calculates and updates each student’s course grade by aggregating assignment scores, allowing students to view their performance across all enrolled courses in a centralized dashboard. I implemented secure role-based access in a microservices architecture, and designed a dynamic frontend webpage for personalized, user-specific content. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
+I developed a full-stack web-based application that simulates the core workflows of modern online learning systems. The system offers an intuitive, role-specific interface that streamlines common academic interactions between students and instructors in an educational setting. Students can easily manage course enrollment, assignments, and academic progress through a personalized dashboard with dedicated pages for each enrolled course. Instructors are equipped with tools to post content, monitor student engagement, and deliver personalized feedback. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
 
 You can test out the platform here:
 
@@ -13,12 +13,12 @@ You can test out the platform here:
 ---
 ## Features
 
-- **User Authentication**: JWT-based login system with secure registration and role-based access for students and instructors
-- **Course Management**: Instructors can create, update, delete, and manage courses
-- **Course Enrollment**: Students can browse courses and enroll or unenroll
-- **Role-Based Access Control**: Separate access flows, dashboard, and permissions for students and instructors
-- **Assignment Submission & Grading**: Students can submit assignments, and instructors can view, grade, and provide feedback
-- **API Gateway & Service Discovery**: Routes traffic using Spring Cloud Gateway with dynamic service registration via Eureka
+- Secure login system provides tailored access and functionality based on whether the user is a student or instructor
+- Students can browse available courses, enroll in classes, and track their academic progress in one personalized home page
+- Each course a student is enrolled in has its own dedicated page displaying course content, assignments, due dates, submissions, and grades (specific to the user)
+- Instructors can create and manage courses, edit enrollment, post assignments, view/grade student submissions
+- Assignments can be submitted by students online prior to the due date, and returned with individual feedback from the instructor
+- Grades are automatically calculated and updated, helping students stay informed across all courses
 
 ---
 

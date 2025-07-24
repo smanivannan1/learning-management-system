@@ -7,7 +7,7 @@
 ---
 I developed a full-stack web based LMS application that implements the core workflows of modern online learning platforms. The system offers an intuitive, role-specific interface that streamlines common academic interactions between students and instructors in a digital environment. For demo purposes, I designed and populated the platform with real courses and layouts inspired by my university and hosted the application on the cloud so users can use it reliably without needing to install anything.
 
-You can test out the platform here:
+You can check out the platform here:
 
 **Live Demo**: [http://34.173.28.213:4200/login](http://34.173.28.213:4200/login)
 ---

@@ -1,5 +1,10 @@
 # Student Course Management System
 
+## Author
+
+**Sachin Manivannan**  
+
+---
 I designed and developed a full-stack web-based application that simulates key workflows of modern online learning systems, supporting both student and instructor access. Students can register, browse and enroll in available courses, submit course-specific assignments, and view grades for individual submissions and cumulative course performance. Instructors have a dedicated interface to view and manage student enrollment, create and update courses/content, post assignments, grade submissions, and manage students across multiple classes. The system automatically calculates and updates each student’s course grade by aggregating assignment scores, allowing students to view their performance across all enrolled courses in a centralized dashboard. I implemented secure role-based access in a microservices architecture, and designed a multi-page frontend webpage for personalized, user-specific content. I designed and populated the platform with real courses and layouts inspired by my university for demo purposes, and I hosted the application on the cloud so users can use it reliably without needing to install anything.
 
 You can test out the platform here:
@@ -40,15 +45,16 @@ You can test out the platform here:
 
 ## Microservices Overview
 
-- **Inter-Service Communication**: Independent microservices communicate via REST (using Feign clients)
-- **User Service** – Handles user registration, login, role assignment, and JWT for secure authentication
-- **Course Service** – Manages course data (CRUD operations, search)  
-- **Enrollment Service** – Handles student course enrollments and status (ACTIVE vs INACTIVE)
+- **Inter-Service Communication**: Independent microservices communicate via REST using Feign clients
+- **User Service** – Handles user registration, login, and role assignment using JWT for secure authentication
+- **Course Service** – Manages course data, search functionality, and CRUD operations  
+- **Enrollment Service** – Handles student enrollment using data retrieved from the User and Course services
 - **Assignment Service** – Enables instructors to create assignments and students to view assigned work and due dates
-- **Submission Service** – Handles student assignment submissions and feedback from the instructor side
-- **Gradebook Service** – Calculates overall grades for students based on assignment scores and exposes grade data per course and student
-- **API Gateway & Service Discovery**: Routes traffic using Spring Cloud Gateway with dynamic service registration via Eureka
-- **Containerization**: All services are containerized with Docker for isolated, scalable deployment, 
+- **Submission Service** – Handles student assignment submissions and scores/feedback from the instructor side
+- **Gradebook Service** – Calculates overall grades for students based on submission scores and exposes grade data per course and student
+- **Discovery Service** - Allows microservices to register themselves with Eureka so they can be dynamically discovered by other services
+- **API Gateway Service**: Routes traffic to the appropriate service by acting as a centralized entry point for all client requests (via Spring Cloud Gateway and Eureka)
+- **Containerization**: Dockerized all services and used Docker Compose to orchestrate and deploy the application on Google Cloud Platform
 
 
 ## Future Improvements
@@ -61,9 +67,4 @@ You can test out the platform here:
 
 ---
 
-## Author
-
-**Sachin Manivannan**  
-
----
 
